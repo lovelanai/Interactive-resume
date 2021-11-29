@@ -1,3 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: pixel;
+}
+
+
+
+
+
+@font-face {
+    font-family: pixel;
+    src: url(./assets/font/PressStart2P.ttf);
+}
+
+
 #container{
     position: fixed;
     left: 0;
@@ -5,7 +21,16 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ded1fd6b-6738-42b8-b0cf-d5fd40ca7500/dbi6chf-e7d78134-6642-401c-b11d-ae03848f9c17.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlZDFmZDZiLTY3MzgtNDJiOC1iMGNmLWQ1ZmQ0MGNhNzUwMFwvZGJpNmNoZi1lN2Q3ODEzNC02NjQyLTQwMWMtYjExZC1hZTAzODQ4ZjljMTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xzPSVTNpYAeO6ymPCdXWYWVBevmB3LUXSP3OMsPduMI);
+}
+
+.background{
+    position: absolute;
+    z-index: -3;
+    height: 100%;
+    width: 8100px;
+    background-image: url(./assets/img/background.jpg);
+    animation: speedup 15s;
+    animation-fill-mode: forwards; 
 
 }
 
@@ -13,36 +38,170 @@
 #ground-and-grass-container {
     position: absolute;
     left: 0;
-    top: 80%;
+    bottom: -31rem;
     width: 8100px;
     height: 90%;}
 
 
     .ground{
         width: 100%;
-        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ded1fd6b-6738-42b8-b0cf-d5fd40ca7500/ddy9my9-04fbf15a-b985-464d-9a05-79eddcc146cd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlZDFmZDZiLTY3MzgtNDJiOC1iMGNmLWQ1ZmQ0MGNhNzUwMFwvZGR5OW15OS0wNGZiZjE1YS1iOTg1LTQ2NGQtOWEwNS03OWVkZGNjMTQ2Y2QuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ar7UdiJFsU0b9ir5edVHoH5Z1DtQi5PaInlMZepD8Zo);
+        background-image: url(./assets/img/grass.jpg);
         background-size: 20rem;
         position: absolute;
         height: 100%;
+        animation: speedup 15s;
+      
+        animation-fill-mode: forwards; 
     }
+
 
     .grass{
         position: absolute;
     width: 100%;
-    height: 50px;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ded1fd6b-6738-42b8-b0cf-d5fd40ca7500/ddvuidm-6bc927e1-c6ff-4995-bff0-60a21ebf5138.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlZDFmZDZiLTY3MzgtNDJiOC1iMGNmLWQ1ZmQ0MGNhNzUwMFwvZGR2dWlkbS02YmM5MjdlMS1jNmZmLTQ5OTUtYmZmMC02MGEyMWViZjUxMzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.z5vkqCeBgAjS80mGPMSFGmYs3cX826QImyQZVDTyTCM);
-    background-size: 10rem;
+    height: 159px;
+    background-image: url(./assets/img/highway.png);
+    background-size: 33rem;
+    animation: speedup 15s;
+
+    animation-fill-mode: forwards; 
+}
+
+/* MOVING ROAD */
+
+
+@keyframes speedup {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300rem);
+    }
+
+}
+/* MOVING ROAD END */
+
+
+.cars{
+    position: relative;
+    top: 32rem;
+    display: flex;
 }
 
 
+    #car-container{
+        left: 10%;
+     
+        position: relative;
+    }
 
-    #love-container{
-        left: 40%;
-        bottom: 132px;
-        position: absolute;
+    #car {
+      
+        animation: shake .4s;
+        animation-iteration-count:15;
+        animation-delay: 2s;
+    }
+
+    #car2-container{
+        right: 48rem;
+        top: 5.8rem;
+        position: relative;
+        animation: movingcarright 10s;
+        animation-iteration-count:1;
+        animation-fill-mode: forwards; 
+        animation-delay: 3s;
+        
+    }
+
+    #car2{
+        animation: movingcarup 5s;
+        animation-iteration-count:1;
+        animation-fill-mode: forwards; 
+        animation-delay: 7s;
+        height: 277px;
     }
 
 
-#love {
-    height: 277px;
+    @keyframes movingcarright{
+        
+        
+
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(62rem);
+        }
+    
+        
+    }
+
+    @keyframes movingcarup{
+
+
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-4.5rem);
+        }  
+        
+    }
+
+
+    /* SHAKE ANIMATION */  
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        25% { transform: translate(-1px, -2px) rotate(-1deg); }
+        50% { transform: translate(1px, -1px) rotate(1deg); }
+        75% { transform: translate(3px, 1px) rotate(-1deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+      /* SHAKE ANIMATION END */ 
+
+
+#chatbubble{
+
+    position: absolute;
+    height: 10rem;
+    top: 23rem;
+    left: 52rem;
+    opacity: 0;
+    animation: fadeIn .1s ease-in;
+    animation-delay: 13s;
+    animation-fill-mode: forwards; 
+
+}
+
+.chatbubblepic{
+    height: 100%;
+    animation: fadeOut .5s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+}
+
+#text{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    animation: fadeOut .5s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { 
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+}
+
+@keyframes fadeOut {
+    from { 
+      opacity:1;
+    }
+    to {
+      opacity:0;
+    }
 }
