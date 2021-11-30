@@ -1,0 +1,82 @@
+#wrapper
+{
+    position: absolute;
+    z-index: 1;
+}
+#effect
+{
+
+    position: relative;
+    width: 1000px;
+    height: 1600px;
+    box-shadow: 0px 0px 10px 0px #610b0b;
+}
+#effect p
+{
+ margin-top:10px;
+ font-size:30px;
+ color:#F79F81;
+}
+
+.curtains{
+    width: 500px;
+    position:absolute;
+    height: 1600px;
+}
+
+#curtain1
+{
+ top:0px;
+ left:0px;
+
+}
+#curtain2
+{
+ top:0px;
+ right:0px;
+}
+
+#curtain_buttons{
+    display: flex;
+}
+
+#curtain_buttons img
+{   
+    position: absolute;
+    height: 30rem;
+    top: -10rem;
+    left: -24rem;
+    animation: dragdown .7s;
+    animation-delay: .5s;
+}
+
+@keyframes dragdown {
+
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(4.5rem);
+    }  
+
+    100% {
+        transform: translateY(0);
+    }  
+}
+
+
+@media (max-width:1000px){
+    #wrapper{
+        display: none;
+    }
+    #arm{
+        display: none;
+    }
+}
+
+#arm{
+    position: absolute;
+    z-index: -1;
+    height: 7rem;
+    top: 10rem;
+}

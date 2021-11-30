@@ -302,7 +302,7 @@ a{
 
 .eye{
     width: 36px;
-    height: 18px;
+    height: 22px;
     background: #fff;
     display: inline-block;
     margin: 0px;
@@ -312,15 +312,15 @@ a{
 }
 
 .ball{
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     background: #000;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 3px solid #333;
+    border: 4px solid rgb(46, 84, 50);
 }
 
 
