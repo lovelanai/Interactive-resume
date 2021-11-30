@@ -9,7 +9,8 @@
 }
 
 body{
-    background-color: rgb(191, 255, 152);
+    background-image: url(./assets/img/bodybackground.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +24,14 @@ body{
     min-height: 1600px;
     background: rgb(255, 255, 255);
     margin: 50px;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
 
 .container .left-side{
     position: relative;
-    background-color: #d94444;
+    background-color: #e94747;
     background-size: 10rem;
     border: 45px solid transparent;
     border-image: url(./assets/img/navborder.png) 85 round;
@@ -53,8 +54,8 @@ body{
     height: 200px;
     overflow: hidden;
 
-    border: 10px solid #A44821;
-    border-radius: 50%; 
+    border: 10px solid #b1ed9b;
+    border-radius: 5px; 
 
 }
 
@@ -68,7 +69,7 @@ body{
 }
 
 .profiletext h2{
-    color: white;
+    color: #F4EBDA;
     font-size: 1.2em;
     margin-top: 20px;
     text-transform: uppercase;
@@ -87,7 +88,7 @@ body{
 }
 
 .title{
-    color: white;
+    color: #F4EBDA;
     text-transform: uppercase;
    font-weight: 600;
    letter-spacing: 1px;
@@ -109,11 +110,11 @@ body{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #FBD000;
+    color: #ffefa4;
 }
 
 .contactinfo ul li .text{
-    color: white;
+    color: #F4EBDA;
     font-weight: 300;
     
 }
@@ -123,17 +124,17 @@ body{
 }
 
 .contactinfo.education h5{
-    color: #FBD000;
+    color: #ffefa4;
     font-weight: 500;
 }
 
 .contactinfo.education h4:nth-child(2){
-    color: rgb(255, 255, 255);
+    color: #F4EBDA;
     font-weight: 500;
 }
 
 .contactinfo.education h4{
-    color: rgb(255, 255, 255);
+    color: #F4EBDA;
     font-weight: 300;
 }
 
@@ -159,7 +160,7 @@ body{
 
 .container .right-side{
     position: relative;
-    background-color: rgb(240, 240, 240);
+    background-color: #F4EBDA;
     padding: 40px;
 }
 
@@ -172,7 +173,7 @@ body{
 }
 
 .title2{
-    color: #003147;
+    color: #86a0ff;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -201,7 +202,7 @@ p{
 
 .about .box .text h4{
     text-transform: uppercase;
-    color: lightskyblue;
+    color: #e94747;
     font-size: 16px;
 }
 
@@ -248,7 +249,7 @@ p{
 }
 
 .interest ul li .fas{
-    color: lightskyblue;
+    color: #e94747;
     font-size: 18px;
     width: 20px;
 
@@ -285,4 +286,8 @@ p{
     .skills .box{
         grid-template-columns: repeat(1,1fr);
     }
+}
+
+a{
+    text-decoration: none;
 }

@@ -1,10 +1,9 @@
-function changetext(text) {
-    const paragraph = document.getElementById("text")
-    paragraph.innerText = text;
+
+/** Removes intro-scene and replace it with the main content (resumé) */
+
+function showresume() { 
+    var myobj = document.getElementById("container");
+    myobj.remove();
+    document.getElementById('resume').style.display = "grid";
   }
-
-
-  function hej(){
-     
-    document.getElementById('chatbubble').style.display = "initial";
-}
+  
