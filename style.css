@@ -232,7 +232,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0;
+    top: 0; 
     left: -62rem;
     animation: movingcarright .1s;
     animation-delay: 22.5s;
@@ -247,8 +247,9 @@
     font-size: 30px;
     text-transform: uppercase;
     border-radius: 12px;
+    
     opacity: 0;
     animation: fadeIn .1s ease-in;
     animation-delay: 23s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }

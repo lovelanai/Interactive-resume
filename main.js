@@ -5,6 +5,7 @@ function showresume() {
   var myobj = document.getElementById("container");
   myobj.remove();
   document.getElementById('resume').style.display = "grid";
+  $("#opencurtain").delay(3000).animate({"top": "-10rem"}, 500)
 }
 
 
