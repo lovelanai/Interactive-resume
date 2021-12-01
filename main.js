@@ -1,3 +1,6 @@
+var sop = new Audio();
+sop.src = "./assets/audio/sop.wav";
+
 
 /** Removes intro-scene and replace it with the main content (resumé) */
 

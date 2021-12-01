@@ -294,33 +294,35 @@ a{
 
 .eyes{
     position: absolute;
-    top: 3rem;
+    top: 2.8rem;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
 }
 
 .eye{
-    width: 36px;
-    height: 22px;
-    background: #fff;
+    width: 22px;
+    height: 7px;
+    background: #cead9c;
     display: inline-block;
-    margin: 0px;
+    margin: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
 }
 
 .ball{
-    width: 15px;
-    height: 15px;
+    width: 9px;
+    height: 9px;
     background: #000;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 4px solid rgb(46, 84, 50);
+    border: 2px solid rgb(46, 84, 50);
 }
 
 
