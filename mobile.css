@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(./assets/font/PressStart2P.ttf);
+}
+
+
+#container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-mobile{
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    height: 12000px;
+    background-image: url(./assets/img/backgroundmobile.jpg);
+    background-size: contain;
+
+    animation: speedup 15s;
+
+    animation-fill-mode: forwards; 
+
+}
+
+
+#ground-and-grass-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -31rem;
+    height: 8100px;
+    width: 60%;
+
+    animation: speedup 15s;
+
+    animation-fill-mode: forwards; 
+}
+
+
+    .grass-mobile{
+        width: 100%;
+        background-image: url(./assets/img/grass.jpg);
+        background-size: 10rem;
+        position: absolute;
+        height: 100%;
+        
+ 
+    }
+
+
+    .ground-mobile{
+    position: absolute;
+    height: 100%;
+    width: 159px;
+    background-image: url(./assets/img/highwaymobile.png);
+    background-size: 10rem;
+
+
+}
+
+/* MOVING ROAD */
+
+
+@keyframes speedup {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(300rem);
+    }
+
+}
+
+
+
+
+
+
+
+
+.cars-mobile{
+    position: relative;
+    bottom: 0;
+    display: flex;
+}
+
+
+    #car-container-mobile{
+        left: 20%;
+        top: 13rem;
+        position: relative;
+    }
+
+    #car-mobile {
+      
+        animation: shake .4s;
+        animation-iteration-count:15;
+        animation-delay: 2s;
+    }
+
+
+    /* SHAKE ANIMATION */  
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        25% { transform: translate(-1px, -2px) rotate(-1deg); }
+        50% { transform: translate(1px, -1px) rotate(1deg); }
+        75% { transform: translate(3px, 1px) rotate(-1deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+      /* SHAKE ANIMATION END */ 
+
+
+      #car2-container-mobile{
+
+        position: relative;
+        top: 40rem;
+        animation: mobilecarup 10s;
+        animation-iteration-count:1;
+        animation-fill-mode: forwards; 
+        animation-delay: 3s;
+        
+    }
+
+    #car2-mobile{
+        height: 277px;
+        animation: mobilecarleft 5s;
+        animation-iteration-count:1;
+        animation-fill-mode: forwards; 
+        animation-delay: 8s;
+    }
+
+
+
+    @keyframes mobilecarup{
+        
+        
+
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-40rem);
+        }
+    
+        
+    }
+
+    @keyframes mobilecarleft{
+
+
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-4.8rem);
+        }  
+        
+    }
+
+
+
+
+
+    #chatbubble-mobile{
+        position: absolute;
+        height: 6rem;
+        top: -1rem;
+        left: 7rem; 
+        opacity: 0;
+        animation: fadeIn .1s ease-in;
+        animation-delay: 13s;
+        animation-fill-mode: forwards; 
+
+    }
+    
+    .chatbubblepic-mobile{
+        height: 100%;
+        animation: fadeOut .5s;
+        animation-delay: 18s;
+        animation-fill-mode: forwards;
+    }
+    
+    #text-mobile{
+        position: absolute;
+        top: 15px;
+        left: 17px;
+        font-size: 10px;
+        animation: fadeOut .5s;
+        animation-delay: 18s;
+        animation-fill-mode: forwards;
+        
+    }
+
+
+    #chatbubble2-mobile{
+        position: absolute;
+        height: 6rem;
+        top: 12rem;
+        left: 7rem; 
+        opacity: 0;
+        animation: fadeIn .1s ease-in;
+        animation-delay: 18.5s;
+        animation-fill-mode: forwards;
+    
+    }
+    
+    .chatbubblepic2-mobile{
+        height: 100%;
+        animation: fadeOut .5s;
+        animation-delay: 23s;
+        animation-fill-mode: forwards;
+    }
+    
+    #text2-mobile{
+        position: absolute;
+        top: 15px;
+        left: 17px;
+        font-size: 10px;
+        animation: fadeOut .5s;
+        animation-delay: 23s;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes fadeIn {
+    from { 
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+}
+
+@keyframes fadeOut {
+    from { 
+      opacity:1;
+    }
+    to {
+      opacity:0;
+    }
+}
+
+.resume-btn-mobile button{
+    font-family: pixel;
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    left: 3rem;
+    top: 8rem;
+    display: none;
+}
