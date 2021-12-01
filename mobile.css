@@ -11,7 +11,7 @@
 
 
 #container-mobile{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -30,7 +30,7 @@
     background-image: url(./assets/img/backgroundmobile.jpg);
     background-size: contain;
 
-    animation: speedup 15s;
+    animation: speedup-mobile 15s;
 
     animation-fill-mode: forwards; 
 
@@ -46,7 +46,7 @@
     height: 8100px;
     width: 60%;
 
-    animation: speedup 15s;
+    animation: speedup-mobile 15s;
 
     animation-fill-mode: forwards; 
 }
@@ -76,7 +76,7 @@
 /* MOVING ROAD */
 
 
-@keyframes speedup {
+@keyframes speedup-mobile {
     0% {
         transform: translateY(0);
     }
@@ -255,12 +255,49 @@
     }
 }
 
-.resume-btn-mobile button{
-    font-family: pixel;
+.resume-btn-mobile{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    height: 10rem;
-    width: 10rem;
-    left: 3rem;
+    top: 0; 
+    left: -62rem;
+    animation: movingcarright .1s;
+    animation-delay: 22.5s;
+    animation-fill-mode: forwards;
+}
+
+.resume-btn-mobile button{
+    position: absolute;
+    background-image: url(./assets/img/button.png);
+    background-size: contain;
+    height: 6rem;
+    width: 21rem;
+    left: -2rem;
     top: 8rem;
-    display: none;
+    border-radius: 10px;
+    animation: blink-text 1s infinite;
+}
+
+@keyframes blink-text {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    50.01% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width:1000px) {
+    #container-mobile{
+        display: flex;
+    }
 }

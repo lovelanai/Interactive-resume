@@ -119,7 +119,7 @@
             transform: translateX(0);
         }
         100% {
-            transform: translateX(62rem);
+            transform: translateX(59rem);
         }
     
         
@@ -152,13 +152,13 @@
 #chatbubble{
 
     position: absolute;
-    height: 10rem;
-    top: 23rem;
-    left: 52rem;
+    height: 7rem;
+    top: 27rem;
+    left: 48rem;
     opacity: 0;
     animation: fadeIn .1s ease-in;
     animation-delay: 13s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 
 }
 
@@ -170,38 +170,42 @@
 }
 
 #text{
+    font-size: 12px;
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 15px;
+    left: 17px;
     animation: fadeOut .5s;
     animation-delay: 18s;
     animation-fill-mode: forwards;
 }
 
 #chatbubble2{
-
     position: absolute;
-    height: 10rem;
-    top: 25rem;
-    left: 26rem;
-    opacity: 0;
+    height: 7rem;
+    top: 29rem;
+    left: 24rem;
+    opacity: 0; 
     animation: fadeIn .1s ease-in;
     animation-delay: 18.5s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 
 }
 
+
 .chatbubblepic2{
     height: 100%;
+    
     animation: fadeOut .5s;
     animation-delay: 23s;
     animation-fill-mode: forwards;
 }
 
 #text2{
+    font-size: 12px;
     position: absolute;
-    top: 25px;
-    left: 25px;
+    top: 15px;
+    left: 17px;
+    
     animation: fadeOut .5s;
     animation-delay: 23s;
     animation-fill-mode: forwards;
@@ -239,17 +243,28 @@
     animation-fill-mode: forwards;
 }
 
+
+
 .resume-btn button{
     font-family: pixel;
     cursor: pointer;
-    height: 15rem;
-    width: 30rem;
+    height: 6rem;
+    width: 21rem;
+    background-image: url(./assets/img/button.png);
+    background-size: contain;
     font-size: 30px;
     text-transform: uppercase;
     border-radius: 12px;
+    color: white    ;
     
     opacity: 0;
     animation: fadeIn .1s ease-in;
     animation-delay: 23s;
     animation-fill-mode: forwards;
+}
+
+@media (max-width:1000px) {
+    container{
+        display: none;
+    }
 }

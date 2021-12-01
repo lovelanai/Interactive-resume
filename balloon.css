@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap');
+
+#zeppelin-container{
+    position: absolute;
+ 
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.zeppelin {
+
+
+    position: relative;
+    left: 110rem;
+
+    height: 22rem;
+    width: 29rem;
+    animation: floatleft 40s infinite;
+}
+
+.zeppelin-move{
+
+    animation: float 3s infinite;
+}
+
+.zeppelin p {
+    position: absolute;
+    top: 8rem;
+    left: 6.5rem;
+    font-size: 50px;
+    font-family: 'Solway', serif;
+
+    background-image: linear-gradient(to right, rgb(255, 65, 65), rgb(96, 114, 255), rgb(255, 65, 65), rgb(96, 114, 255), rgb(255, 65, 65));
+    color: rgba(0, 128, 0, 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    animation: animate 5s linear infinite;
+    background-size: 1000%;
+}
+
+/* TEXT-COLOR-BACKGORUND */
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* TEXT-COLOR-BACKGORUND END */
+
+
+.cap{
+    height: 8rem;
+    position: absolute;
+    top: -1rem;
+    left: 6rem;
+}
+
+@keyframes float{
+
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(4rem);
+        }  
+    
+        100% {
+            transform: translateY(0);
+        }  
+}
+
+@keyframes floatleft{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200rem);
+    }  
+}
+
+
+/* ZEPPELIN FROM RIGHT*/
+
+
+.zeppelin2 {
+
+    position: relative;
+    right: 110rem;
+    top: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22rem;
+    width: 29rem;
+    animation: floatright 40s infinite;
+}
+
+.zeppelin-move2{
+ 
+    animation: float 3s infinite;
+}
+
+.zeppelin-move2 p {
+    position: absolute;
+    top: 8rem;
+    right: 6.5rem;
+    font-size: 50px;
+    font-family: 'Solway', serif;
+
+    background-image: linear-gradient(to right, rgb(255, 65, 65), rgb(96, 114, 255), rgb(255, 65, 65), rgb(96, 114, 255), rgb(255, 65, 65));
+    color: rgba(0, 128, 0, 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    animation: animate 5s linear infinite;
+    background-size: 1000%;
+}
+
+/* TEXT-COLOR-BACKGORUND */
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* TEXT-COLOR-BACKGORUND END */
+
+
+.cap2{
+    height: 8rem;
+    position: absolute;
+    top: -1rem;
+    right: 6rem;
+}
+
+@keyframes float{
+
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(4rem);
+        }  
+    
+        100% {
+            transform: translateY(0);
+        }  
+}
+
+@keyframes floatright{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200rem);
+    }  
+}

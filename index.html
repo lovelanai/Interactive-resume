@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./test.css">
     <link rel="stylesheet" href="./curtains.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./balloon.css">
     <script src="https://kit.fontawesome.com/caac8701c4.js" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body >
 
     <!--ta bort style="display: none;"-->
-    <div id="container">
+    <div id="container" style="display: none;">
 
         <div class="background">
         </div>
@@ -72,8 +74,70 @@
 
 
     </div>
+    <div id="container-mobile">
+
+        <div class="background-mobile">
+        </div>
+
+
+
+
+        <div id="ground-and-grass-container-mobile">
+
+
+
+            <div class="grass-mobile">
+
+            </div>
+
+            <div class="ground-mobile">
+
+            </div>
+
+
+
+        </div>
+
+        <div class="cars-mobile">
+            <div id="car-container-mobile">
+                <div id="car-mobile">
+                    <img style="height: 9rem;" src="./assets/img/mobilecar.png" alt="">
+                </div>
+            </div>
+
+            <div id="car2-container-mobile">
+                <div id="car2-mobile">
+                    <img style="height: 11rem;" src="./assets/img/mobilepolice.png" alt="">
+                </div>
+            </div>
+
+
+        <div id="chatbubble2-mobile">
+            <img class="chatbubblepic2-mobile" src="./assets/img/chatbubble.png" alt="">
+            <p style="font-family: pixel;" id="text2-mobile">Har inget körkort.. Men du kan få se mitt CV om du vill!</p>
+        </div>
+
+            <div id="chatbubble-mobile">
+                <img class="chatbubblepic-mobile" src="./assets/img/chatbubble.png" alt="">
+                <p style="font-family: pixel;" id="text-mobile">Det gick lite väl fort där grabben. Visa mig ditt körkort tack!</p>
+            </div>
+            <div class="resume-btn-mobile">
+                <button onmousedown="sop.play()" onclick="showresume()" style="font-family: pixel;">Visa CV!</button>
+            </div>
+
+        </div>
+
+
+ 
+
+
+
+
+    </div>
     <!-- ta bort style="display: "grid;"-->
-    <div  class="container" id="resume" >
+
+        
+    <div  class="container" id="resume" style="display: grid; " >
 
         <div id="wrapper">
 
@@ -90,7 +154,6 @@
             </div>
 
         </div>
-
 
 
 
@@ -308,6 +371,27 @@
 
         </div>
     </div>
+
+
+    <div id="zeppelin-container"  style="display: none;">
+        <div class="zeppelin">
+            <div class="zeppelin-move">
+            <img style="height: 100%; width: 100%;" src="./assets/img/zeppelin.png" alt="">
+            <img class="cap" src="./assets/img/cap.gif" alt="">
+            <p>HIRE ME</p>
+            </div>
+        </div>
+
+        <div class="zeppelin2">
+            <div class="zeppelin-move2">
+            <img style="height: 100%; width: 100%;" src="./assets/img/zeppelin2.png" alt="">
+            <img class="cap2" src="./assets/img/cap2.gif" alt="">
+            <p>HIRE ME</p>
+        </div>
+        </div>
+    </div>
+
+
 
 </body>
 

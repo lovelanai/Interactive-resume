@@ -7,6 +7,8 @@ sop.src = "./assets/audio/sop.wav";
 function showresume() {
   var myobj = document.getElementById("container");
   myobj.remove();
+  var myobj = document.getElementById("container-mobile");
+  myobj.remove();
   document.getElementById('resume').style.display = "grid";
   $("#opencurtain").delay(3000).animate({"top": "-10rem"}, 500)
 }
@@ -39,6 +41,7 @@ document.onmousemove = function () {
 /**Curtain+effect */
 
 function open_curtain() {
+  document.getElementById('zeppelin-container').style.display = "flex";
   $("#arm").animate({"left": "-17.25rem", "z-index": "1"}, 100)
   $("#arm").delay(400).animate({"top": "15rem"}, 200)
   $("#arm").delay(100).animate({"top": "10rem","z-index":"-1"}, 100)
