@@ -191,17 +191,17 @@
     .chatbubblepic-mobile{
         height: 100%;
         animation: fadeOut .5s;
-        animation-delay: 18s;
+        animation-delay: 19s;
         animation-fill-mode: forwards;
     }
     
     #text-mobile{
         position: absolute;
-        top: 15px;
+        top:  8px;;
         left: 17px;
         font-size: 10px;
         animation: fadeOut .5s;
-        animation-delay: 18s;
+        animation-delay: 19s;
         animation-fill-mode: forwards;
         
     }
@@ -222,17 +222,17 @@
     .chatbubblepic2-mobile{
         height: 100%;
         animation: fadeOut .5s;
-        animation-delay: 23s;
+        animation-delay: 24s;
         animation-fill-mode: forwards;
     }
     
     #text2-mobile{
         position: absolute;
-        top: 15px;
+        top: 9px;
         left: 17px;
         font-size: 10px;
         animation: fadeOut .5s;
-        animation-delay: 23s;
+        animation-delay: 24s;
         animation-fill-mode: forwards;
     }
 
@@ -263,7 +263,7 @@
     justify-content: center;
     position: absolute;
     top: 0; 
-    left: -62rem;
+    left: -59rem;
     animation: movingcarright .1s;
     animation-delay: 22.5s;
     animation-fill-mode: forwards;

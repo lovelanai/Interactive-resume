@@ -16,10 +16,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body >
+<body>
 
     <!--ta bort style="display: none;"-->
-    <div id="container" style="display: none;">
+    <div id="container" >
 
         <div class="background">
         </div>
@@ -59,16 +59,18 @@
 
         <div id="chatbubble">
             <img class="chatbubblepic" src="./assets/img/chatbubble.png" alt="">
-            <p style="font-family: pixel;" id="text">Det gick lite väl fort där grabben. Visa mig ditt körkort tack!</p>
+            <p style="font-family: pixel;" id="text">Way to fast!! Licence and registration
+                please!</p>
         </div>
 
         <div id="chatbubble2">
             <img class="chatbubblepic2" src="./assets/img/chatbubble.png" alt="">
-            <p style="font-family: pixel;" id="text2">Har inget körkort.. Men du kan få se mitt CV om du vill!</p>
+            <p style="font-family: pixel;" id="text2">Sorry officer.. I aint got no licence, but I can show you my
+                resumé!!</p>
         </div>
 
         <div class="resume-btn">
-            <button onmousedown="sop.play()" onclick="showresume()" style="font-family: pixel;">Visa CV!</button>
+            <button onmousedown="sop.play()" onclick="showresume()" style="font-family: pixel;">Show Resumé</button>
         </div>
 
 
@@ -101,7 +103,7 @@
         <div class="cars-mobile">
             <div id="car-container-mobile">
                 <div id="car-mobile">
-                    <img style="height: 9rem;" src="./assets/img/mobilecar.png" alt="">
+                    <img style="height: 9rem;" src="./assets/img/mobilecar.png"  alt="">
                 </div>
             </div>
 
@@ -112,23 +114,25 @@
             </div>
 
 
-        <div id="chatbubble2-mobile">
-            <img class="chatbubblepic2-mobile" src="./assets/img/chatbubble.png" alt="">
-            <p style="font-family: pixel;" id="text2-mobile">Har inget körkort.. Men du kan få se mitt CV om du vill!</p>
-        </div>
+            <div id="chatbubble2-mobile">
+                <img class="chatbubblepic2-mobile" src="./assets/img/chatbubble.png" alt="">
+                <p style="font-family: pixel;" id="text2-mobile">Sorry officer... I don't have a licence, but I can show you my
+                    resumé!!</p>
+            </div>
 
             <div id="chatbubble-mobile">
                 <img class="chatbubblepic-mobile" src="./assets/img/chatbubble.png" alt="">
-                <p style="font-family: pixel;" id="text-mobile">Det gick lite väl fort där grabben. Visa mig ditt körkort tack!</p>
+                <p style="font-family: pixel;" id="text-mobile">It went a little too fast there boy! Licence and registration
+                    please!</p>
             </div>
             <div class="resume-btn-mobile">
-                <button onmousedown="sop.play()" onclick="showresume()" style="font-family: pixel;">Visa CV!</button>
+                <button onmousedown="sop.play()" onclick="showresume()" style="font-family: pixel;">Show Resumé!</button>
             </div>
 
         </div>
 
 
- 
+
 
 
 
@@ -136,8 +140,8 @@
     </div>
     <!-- ta bort style="display: "grid;"-->
 
-        
-    <div  class="container" id="resume" style="display: grid; " >
+
+    <div class="container" id="resume">
 
         <div id="wrapper">
 
@@ -148,8 +152,9 @@
             </div>
 
             <div id="curtain_buttons">
-                <img style="top: -10rem;" src="./assets/img/tofs.png" id="opencurtain" value="OPEN CURTAIN" onclick="open_curtain();">
-                <img  src="./assets/img/tofs.png" style="display: none;" id="closecurtain" type="button"
+                <img style="top: -10rem;" src="./assets/img/tofs.png" id="opencurtain" value="OPEN CURTAIN"
+                    onclick="open_curtain();">
+                <img src="./assets/img/tofs.png" style="display: none;" id="closecurtain" type="button"
                     value="CLOSE CURTAIN" onclick="close_curtain();">
             </div>
 
@@ -163,10 +168,10 @@
                     <div style="    position: absolute;
                     left: -4.3rem;
                     top: -4.2rem;">
-                    <video width="300" height="300" autoplay muted>
-                        <source src="./puppet.mp4">
-                    </video>
-                </div>
+                        <video width="300" height="300" autoplay muted>
+                            <source src="./puppet.mp4">
+                        </video>
+                    </div>
                     <div class="eyes">
 
                         <div class="eye">
@@ -205,7 +210,7 @@
                     </li>
                     <li>
                         <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <span class="text">Göteborg, Sverige</span>
+                        <span class="text">Gothenburg, Sweden</span>
                     </li>
                 </ul>
             </div>
@@ -216,12 +221,12 @@
                 <ul>
                     <li>
                         <h5>2016 - 2019</h5>
-                        <h4>Ekonomiutbildning</h4>
+                        <h4>Highschool diploma in Economics</h4>
                         <h4>Peder Skrivares Skola</h4>
                     </li>
                     <li>
-                        <h5>2006 - 2015</h5>
-                        <h4>Grundskoleutbildning</h4>
+                        <h5>2006 - 2016</h5>
+                        <h4>Elementary school</h4>
                         <h4>Håstensskolan</h4>
                     </li>
                 </ul>
@@ -231,19 +236,19 @@
                 <h3 class="title">Languages</h3>
                 <ul>
                     <li>
-                        <span class="text">Svenska (Swedish)</span>
+                        <span class="text">Swedish</span>
                         <span class="percent">
                             <div style="width: 100%;"></div>
                         </span>
                     </li>
                     <li>
-                        <span class="text">Engelska (English)</span>
+                        <span class="text">English</span>
                         <span class="percent">
                             <div style="width: 90%; background: rgb(201, 255, 74)"></div>
                         </span>
                     </li>
                     <li>
-                        <span class="text">Franska (French)</span>
+                        <span class="text">French</span>
                         <span class="percent">
                             <div style="width: 15%; background: rgb(255, 174, 74)"></div>
                         </span>
@@ -253,20 +258,21 @@
             </div>
 
         </div>
-<div id="arm">
-    <img style="height:10.72rem;" src="./assets/img/arm.png" alt="">
-</div>
+        <div id="arm">
+            <img style="height:10.72rem;" src="./assets/img/arm.png" alt="">
+        </div>
 
 
         <div class="right-side">
 
             <div class="about">
                 <h2 class="title2">Profile</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id esse quia dolores ipsam aut porro
-                    hic. Illo aspernatur velit est, temporibus quam tempora, corporis odit repellat fugit perferendis
-                    quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, inventore iusto? Ea
-                    veritatis atque dolores ipsum distinctio? Sint earum itaque ducimus quo facilis voluptas, aperiam
-                    labore temporibus dolorem, deserunt at?</p>
+                <p>Hi! My name is Love Lanai and I'm 21 years old. I'm currently studying Front-End-Development at
+                    Medieinstitutet in Gothenburg. All though I'm fairly new in the game of coding, I've always been
+                    fast learning when it comes to IT. I usually work with music-production on my sparetime, but I've
+                    also done a lot of graphic creation. For example Photoshop and Procreate. <br> I would love to
+                    expand my knowledge by getting the chance to work with experienced developers out there! <br><br>I
+                    look forward to hearing from you! <br> Best regards, L</p>
             </div>
 
             <div class="about">
@@ -373,21 +379,23 @@
     </div>
 
 
-    <div id="zeppelin-container"  style="display: none;">
-        <div class="zeppelin">
-            <div class="zeppelin-move">
-            <img style="height: 100%; width: 100%;" src="./assets/img/zeppelin.png" alt="">
-            <img class="cap" src="./assets/img/cap.gif" alt="">
-            <p>HIRE ME</p>
+    <div id="zeppelin-container" style="display: none;">
+        <div style="width: 100%; height: 100%; position: relative; overflow: hidden; overflow-y: visible;">
+            <div class="zeppelin">
+                <div class="zeppelin-move">
+                    <img style="height: 100%; width: 100%;" src="./assets/img/zeppelin.png" alt="">
+                    <img class="cap" src="./assets/img/cap.gif" alt="">
+                    <p>HIRE ME</p>
+                </div>
             </div>
-        </div>
 
-        <div class="zeppelin2">
-            <div class="zeppelin-move2">
-            <img style="height: 100%; width: 100%;" src="./assets/img/zeppelin2.png" alt="">
-            <img class="cap2" src="./assets/img/cap2.gif" alt="">
-            <p>HIRE ME</p>
-        </div>
+            <div class="zeppelin2">
+                <div class="zeppelin-move2">
+                    <img style="height: 100%; width: 100%;" src="./assets/img/zeppelin2.png" alt="">
+                    <img class="cap2" src="./assets/img/cap2.gif" alt="">
+                    <p>HIRE ME</p>
+                </div>
+            </div>
         </div>
     </div>
 

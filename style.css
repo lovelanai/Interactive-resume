@@ -152,8 +152,8 @@
 #chatbubble{
 
     position: absolute;
-    height: 7rem;
-    top: 27rem;
+    height: 9rem;
+    top: 26rem;
     left: 48rem;
     opacity: 0;
     animation: fadeIn .1s ease-in;
@@ -170,10 +170,10 @@
 }
 
 #text{
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
-    top: 15px;
-    left: 17px;
+    top: 21px;
+    left: 29px;
     animation: fadeOut .5s;
     animation-delay: 18s;
     animation-fill-mode: forwards;
@@ -181,8 +181,8 @@
 
 #chatbubble2{
     position: absolute;
-    height: 7rem;
-    top: 29rem;
+    height: 9rem;
+    top: 27rem;
     left: 24rem;
     opacity: 0; 
     animation: fadeIn .1s ease-in;
@@ -201,7 +201,7 @@
 }
 
 #text2{
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
     top: 15px;
     left: 17px;
