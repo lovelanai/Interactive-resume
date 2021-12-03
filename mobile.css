@@ -1,16 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: pixel;
-    src: url(./assets/font/PressStart2P.ttf);
-}
-
-
-#container-mobile{
+#container-mobile {
     display: none;
     justify-content: center;
     align-items: center;
@@ -22,7 +10,7 @@
     overflow: hidden;
 }
 
-.background-mobile{
+.background-mobile {
     position: absolute;
     z-index: -3;
     width: 100%;
@@ -32,7 +20,7 @@
 
     animation: speedup-mobile 15s;
 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 
 }
 
@@ -48,22 +36,22 @@
 
     animation: speedup-mobile 15s;
 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
 
-    .grass-mobile{
-        width: 100%;
-        background-image: url(./assets/img/grass.jpg);
-        background-size: 10rem;
-        position: absolute;
-        height: 100%;
-        
- 
-    }
+.grass-mobile {
+    width: 100%;
+    background-image: url(./assets/img/grass.jpg);
+    background-size: 10rem;
+    position: absolute;
+    height: 100%;
 
 
-    .ground-mobile{
+}
+
+
+.ground-mobile {
     position: absolute;
     height: 100%;
     width: 159px;
@@ -80,6 +68,7 @@
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(300rem);
     }
@@ -87,189 +76,202 @@
 }
 
 
-
-
-
-
-
-
-.cars-mobile{
+.cars-mobile {
     position: relative;
     bottom: 0;
     display: flex;
 }
 
 
-    #car-container-mobile{
-        left: 20%;
-        top: 13rem;
-        position: relative;
+#car-container-mobile {
+    left: 20%;
+    top: 13rem;
+    position: relative;
+}
+
+#car-mobile {
+
+    animation: shake .4s;
+    animation-iteration-count: 15;
+    animation-delay: 2s;
+}
+
+
+/* SHAKE ANIMATION */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
     }
 
-    #car-mobile {
-      
-        animation: shake .4s;
-        animation-iteration-count:15;
-        animation-delay: 2s;
+    25% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    75% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+#car2-container-mobile {
+
+    position: relative;
+    top: 40rem;
+    animation: mobilecarup 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+
+}
+
+#car2-mobile {
+    height: 277px;
+    animation: mobilecarleft 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+
+
+/* MOVING CARS ANIMATION*/
+@keyframes mobilecarup {
+
+
+
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40rem);
     }
 
 
-    /* SHAKE ANIMATION */  
-    @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        25% { transform: translate(-1px, -2px) rotate(-1deg); }
-        50% { transform: translate(1px, -1px) rotate(1deg); }
-        75% { transform: translate(3px, 1px) rotate(-1deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-      }
-      /* SHAKE ANIMATION END */ 
+}
+
+/* POLICE CAR SWITCHING LANES ANIMATION*/
+@keyframes mobilecarleft {
 
 
-      #car2-container-mobile{
-
-        position: relative;
-        top: 40rem;
-        animation: mobilecarup 10s;
-        animation-iteration-count:1;
-        animation-fill-mode: forwards; 
-        animation-delay: 3s;
-        
+    0% {
+        transform: translateX(0);
     }
 
-    #car2-mobile{
-        height: 277px;
-        animation: mobilecarleft 5s;
-        animation-iteration-count:1;
-        animation-fill-mode: forwards; 
-        animation-delay: 8s;
+    100% {
+        transform: translateX(-4.8rem);
     }
 
-
-
-    @keyframes mobilecarup{
-        
-        
-
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(-40rem);
-        }
-    
-        
-    }
-
-    @keyframes mobilecarleft{
-
-
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-4.8rem);
-        }  
-        
-    }
+}
 
 
 
 
 
-    #chatbubble-mobile{
-        position: absolute;
-        height: 6rem;
-        top: -1rem;
-        left: 7rem; 
+#chatbubble-mobile {
+    position: absolute;
+    height: 6rem;
+    top: -1rem;
+    left: 7rem;
+    opacity: 0;
+    animation: fadeIn .1s ease-in;
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+
+}
+
+.chatbubblepic-mobile {
+    height: 100%;
+    animation: fadeOut .5s;
+    animation-delay: 19s;
+    animation-fill-mode: forwards;
+}
+
+#text-mobile {
+    position: absolute;
+    top: 8px;
+    ;
+    left: 17px;
+    font-size: 10px;
+    animation: fadeOut .5s;
+    animation-delay: 19s;
+    animation-fill-mode: forwards;
+
+}
+
+
+#chatbubble2-mobile {
+    position: absolute;
+    height: 6rem;
+    top: 12rem;
+    left: 7rem;
+    opacity: 0;
+    animation: fadeIn .1s ease-in;
+    animation-delay: 18.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.chatbubblepic2-mobile {
+    height: 100%;
+    animation: fadeOut .5s;
+    animation-delay: 24s;
+    animation-fill-mode: forwards;
+}
+
+#text2-mobile {
+    position: absolute;
+    top: 9px;
+    left: 17px;
+    font-size: 10px;
+    animation: fadeOut .5s;
+    animation-delay: 24s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
         opacity: 0;
-        animation: fadeIn .1s ease-in;
-        animation-delay: 13s;
-        animation-fill-mode: forwards; 
-
-    }
-    
-    .chatbubblepic-mobile{
-        height: 100%;
-        animation: fadeOut .5s;
-        animation-delay: 19s;
-        animation-fill-mode: forwards;
-    }
-    
-    #text-mobile{
-        position: absolute;
-        top:  8px;;
-        left: 17px;
-        font-size: 10px;
-        animation: fadeOut .5s;
-        animation-delay: 19s;
-        animation-fill-mode: forwards;
-        
     }
 
-
-    #chatbubble2-mobile{
-        position: absolute;
-        height: 6rem;
-        top: 12rem;
-        left: 7rem; 
-        opacity: 0;
-        animation: fadeIn .1s ease-in;
-        animation-delay: 18.5s;
-        animation-fill-mode: forwards;
-    
-    }
-    
-    .chatbubblepic2-mobile{
-        height: 100%;
-        animation: fadeOut .5s;
-        animation-delay: 24s;
-        animation-fill-mode: forwards;
-    }
-    
-    #text2-mobile{
-        position: absolute;
-        top: 9px;
-        left: 17px;
-        font-size: 10px;
-        animation: fadeOut .5s;
-        animation-delay: 24s;
-        animation-fill-mode: forwards;
-    }
-
-
-    @keyframes fadeIn {
-    from { 
-      opacity:0;
-    }
     to {
-      opacity:1;
+        opacity: 1;
     }
 }
 
 @keyframes fadeOut {
-    from { 
-      opacity:1;
+    from {
+        opacity: 1;
     }
+
     to {
-      opacity:0;
+        opacity: 0;
     }
 }
 
-.resume-btn-mobile{
+.resume-btn-mobile {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: -59rem;
     animation: movingcarright .1s;
     animation-delay: 22.5s;
     animation-fill-mode: forwards;
 }
 
-.resume-btn-mobile button{
+.resume-btn-mobile button {
     position: absolute;
     background-image: url(./assets/img/button.png);
     background-size: contain;
@@ -285,19 +287,22 @@
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 1;
     }
+
     50.01% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
 }
 
 @media (max-width:1000px) {
-    #container-mobile{
+    #container-mobile {
         display: flex;
     }
 }

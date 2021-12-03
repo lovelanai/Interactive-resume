@@ -12,12 +12,10 @@
 
 }
 
+/* ZEPPELIN FROM LEFT*/
 .zeppelin {
-
-
     position: absolute;
     left: 110rem;
-
     height: 22rem;
     width: 29rem;
     animation: floatleft 40s infinite;
@@ -43,24 +41,6 @@
     animation: animate 5s linear infinite;
     background-size: 1000%;
 }
-
-/* TEXT-COLOR-BACKGORUND */
-@keyframes animate {
-    0% {
-        background-position: 0% 100%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 100%;
-    }
-}
-
-/* TEXT-COLOR-BACKGORUND END */
-
 
 .cap{
     height: 8rem;
@@ -133,7 +113,7 @@
     background-size: 1000%;
 }
 
-/* TEXT-COLOR-BACKGORUND */
+/* TEXT-COLOR-BACKGORUND ANIMATION */
 @keyframes animate {
     0% {
         background-position: 0% 100%;
@@ -148,16 +128,23 @@
     }
 }
 
-/* TEXT-COLOR-BACKGORUND END */
+/* TEXT EFFECT FOR ZEPPELINS */
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
 
+    50% {
+        background-position: 100% 100%;
+    }
 
-.cap2{
-    height: 8rem;
-    position: absolute;
-    top: -1rem;
-    right: 6rem;
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
+
+/* ZEPPELIN FLYING ACROSS SCREEN TO LEFT ANIMATION*/
 @keyframes float{
 
         0% {
@@ -173,6 +160,7 @@
         }  
 }
 
+/* ZEPPELIN FLYING ACROSS SCREEN TO RIGHT ANIMATION*/
 @keyframes floatright{
 
     0% {
@@ -182,4 +170,12 @@
     100% {
         transform: translateX(200rem);
     }  
+}
+
+
+.cap2{
+    height: 8rem;
+    position: absolute;
+    top: -1rem;
+    right: 6rem;
 }
