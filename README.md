@@ -16,4 +16,4 @@ Pull requests are always fun. For major changes, please open an issue first to d
 
 ## License
 
-A lot off audio & images are NOT owned or created by me. So do NOT use this game for commercial  purposes in any instance. 
+A lot off audio & images are NOT owned or created by me. So do NOT use this project for commercial  purposes in any instance. 
