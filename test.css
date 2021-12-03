@@ -164,6 +164,7 @@ body{
     position: relative;
     background-color: #F4EBDA;
     padding: 40px;
+    cursor: default;
 }
 
 .about{

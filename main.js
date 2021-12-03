@@ -59,7 +59,10 @@ function open_curtain() {
 
   $("#curtain1").delay(500).animate({ width: 20 }, 1000);
   $("#curtain2").delay(500).animate({ width: 20 }, 1000);
+
+    // Changing z-index to make links work
   $("#left-side").animate({ "z-index": "1" }, 1400);
+  $("#right-side").animate({ "z-index": "1" }, 1400);
 
 // Switch between opening and closing curtain buttons
 
@@ -77,7 +80,9 @@ function close_curtain() {
   // Curtain closing animation
   $("#curtain1").delay(500).animate({ width: 520 }, 1000);
   $("#curtain2").delay(500).animate({ width: 520 }, 1000);
+  // Changing back z-index to layer curtain on top
   $("#left-side").animate({ "z-index": "0" }, 100);
+  $("#right-side").animate({ "z-index": "0" }, 100);
 
   // Switch between closing and opening curtain buttons
   document.getElementById('opencurtain').style.display = "initial";
